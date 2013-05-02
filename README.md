@@ -34,16 +34,16 @@ To Do
 -----
 
 * Bash script `boot_partition`
-** Take 1 argument : the partition to boot for the next reboot
+ * Take 1 argument : the partition to boot for the next reboot
 * script : `prepare_partition` (with a chef recipe?)
-** This script will prepare the partiion
-** Debootstrap
-** Install chef and the basics
+ * This script will prepare the partiion
+ * Debootstrap
+ * Install chef and the basics
 * script : `cook_partition`
-** 1 argument : Berksfile
-** Aplly all the recipe from this Berksfile to the new partition in chroot
+ * 1 argument : Berksfile
+ * Aplly all the recipe from this Berksfile to the new partition in chroot
 * script : `pastry-chef`
-** The script that will start at boot of the `RaspChef`
-** Chek if it has to cook (thou a comment in the Berksfile?)
-*** If yes, launch `cook_partition`, then `boot_partition` and reboot in `CookedPartition`
-*** If not, launch `boot_partition` and reboot in `CookedPartition`
+ * The script that will start at boot of the `RaspChef`
+ * Chek if it has to cook (thou a comment in the Berksfile?)
+  * If yes, launch `cook_partition`, then `boot_partition` and reboot in `CookedPartition`
+  * If not, launch `boot_partition` and reboot in `CookedPartition`
