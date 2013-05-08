@@ -35,6 +35,7 @@ To Do
 
  - [x] Bash script `boot_partition`
   - Take 1 argument : the partition to boot for the next reboot
+ - [ ] To the tests with Bats : https://github.com/sstephenson/bats
  - [ ] script : `prepare_partition` (with a chef recipe?)
   - This script will prepare the partiion
   - Debootstrap
