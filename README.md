@@ -18,7 +18,7 @@ How?
 
 ### Triple partition scheme
 
-* A boot partition that contain the `bios` features - We call this partition `boot`
+* A boot partition that contain the `bios` feature - We call this partition `boot`
 * A base partition with a `chef` installed  - We call this partition `RaspChef`
 * An `other` partition that we will cook - We call this partition `CookedPartition`
 
@@ -35,7 +35,7 @@ To Do
 
  - [x] Bash script `boot_partition`
   - Take 1 argument : the partition to boot for the next reboot
- - [ ] To the tests with Bats : https://github.com/sstephenson/bats
+ - [ ] Do the tests with Bats : https://github.com/sstephenson/bats
  - [ ] script : `prepare_partition` (with a chef recipe?)
   - This script will prepare the partiion
   - Debootstrap
